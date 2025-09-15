@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Multi-Page Site — Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MySite</a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="siteNav" class="site-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Bring ideas to life on the web</h1>
+        <p class="lead">Responsive, accessible, and interactive multi-page demo using HTML, CSS, and JavaScript.</p>
+        <p>
+          <a class="btn" href="services.html">See Services</a>
+          <a class="btn btn-outline" href="contact.html">Get in Touch</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="feature-card">
+        <h3>Responsive</h3>
+        <p>Designed to look good on phones, tablets and desktops.</p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Interactive</h3>
+        <p>JS-powered UI: menu toggle, animations and form validation.</p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Deployable</h3>
+        <p>Easy to publish via GitHub Pages or Netlify.</p>
+      </article>
+    </section>
+
+    <section class="demo container">
+      <h2>Live Demo: Click to animate</h2>
+      <div class="demo-row">
+        <div id="demoBox" class="demo-box">Box</div>
+        <button id="demoBtn" class="btn">Trigger Animation</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MySite — built with HTML, CSS, JS</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

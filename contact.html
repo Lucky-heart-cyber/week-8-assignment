@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — MySite</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MySite</a>
+      <button id="navToggle4" class="nav-toggle" aria-label="Open menu">☰</button>
+      <nav id="siteNav4" class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <label>
+        Name
+        <input type="text" id="cfName" name="name" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="cfEmail" name="email" required>
+      </label>
+
+      <label>
+        Message
+        <textarea id="cfMessage" name="message" rows="5" required></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Send</button>
+        <button type="reset" class="btn btn-outline">Reset</button>
+      </div>
+
+      <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> MySite</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
